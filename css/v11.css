@@ -1,0 +1,7 @@
+
+.v7-mark { border-color: var(--mv-note); background: rgba(252, 88, 16, 0.12); }
+.v7-note i, .v7-legend i, .v7-pin { background: var(--mv-note-ink); }
+@media (max-width: 767px) {
+  .fx-web-mark { border-color: var(--mv-note); background: rgba(252, 88, 16, 0.12); }
+  .fx-web-pin { background: var(--mv-note-ink); }
+}

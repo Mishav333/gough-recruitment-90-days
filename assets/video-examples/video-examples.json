@@ -1,0 +1,49 @@
+[
+ {
+  "bucket": "founder",
+  "client": "GoTroppo",
+  "file": "founder_gotroppo.mp4",
+  "poster": "founder_gotroppo.jpg",
+  "caption": "\u201cExplain the internet without sounding like a nerd.\u201d",
+  "sound": true
+ },
+ {
+  "bucket": "founder",
+  "client": "GoTroppo",
+  "file": "founder_gotroppo_nolockin.mp4",
+  "poster": "founder_gotroppo_nolockin.jpg",
+  "caption": "\u201cFor starters, there\u2019s no lock-in contract.\u201d",
+  "sound": true
+ },
+ {
+  "bucket": "founder",
+  "client": "GoTroppo",
+  "file": "founder_gotroppo_redflag.mp4",
+  "poster": "founder_gotroppo_redflag.jpg",
+  "caption": "WiFi: red flag or green flag?",
+  "sound": true
+ },
+ {
+  "bucket": "employee",
+  "client": "Just Switch",
+  "file": "employee_justswitch.mp4",
+  "poster": "employee_justswitch.jpg",
+  "caption": "In the office."
+ },
+ {
+  "bucket": "employee",
+  "client": "Ray White Werribee",
+  "file": "employee_raywhite_office.mp4",
+  "poster": "employee_raywhite_office.jpg",
+  "caption": "The team, on camera.",
+  "sound": true
+ },
+ {
+  "bucket": "employee",
+  "client": "Ray White Werribee",
+  "file": "employee_raywhite_property.mp4",
+  "poster": "employee_raywhite_property.jpg",
+  "caption": "Interview style.",
+  "sound": true
+ }
+]

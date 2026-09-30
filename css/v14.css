@@ -1,0 +1,52 @@
+
+.v14-others { margin-top: 40px; padding-top: 20px; border-top: 1px solid rgba(255, 255, 255, 0.18);
+  display: grid; grid-template-columns: minmax(0, 4fr) minmax(0, 8fr); column-gap: 48px; align-items: baseline; }
+.v14-others-k { margin: 0; font-family: var(--f-body); font-weight: 600; font-size: 12px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gsteel); }
+.v14-others-row { margin: 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 32px; }
+.v14-others-row li { display: flex; flex-direction: column; gap: 4px; }
+.v14-others-row b { font-family: var(--f-display); font-weight: 700; font-size: 17px; line-height: 1.25; color: #FFFFFF; }
+.v14-others-row span { font-family: var(--f-body); font-size: 15px; line-height: 1.45; color: var(--gmist); }
+.v6-own-head { display: block; }
+.v6-own-lists { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.ig-v4 .v14-marks { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 40px 36px; align-self: center; }
+.ig-v4 .v14-mark { margin: 0; min-width: 0; }
+.ig-v4 .v14-mark img { width: min(100%, 168px); aspect-ratio: 1; border-radius: 50%; display: block; }
+.ig-v4 .v14-mark figcaption { margin-top: 14px; display: flex; flex-direction: column; gap: 2px; font-family: var(--f-body); line-height: 1.35; }
+.ig-v4 .v14-k { font-family: var(--f-display); font-weight: 800; font-size: 18px; line-height: 1.1; color: var(--v4-note-ink); }
+.ig-v4 .v14-h { margin-top: 4px; font-size: 14px; font-weight: 600; color: var(--v4-ink); overflow-wrap: anywhere; }
+.ig-v4 .v14-mark figcaption span:last-child { font-size: 13px; color: var(--v4-muted); }
+.v14-p3-video { margin-top: 64px; padding-top: 32px; border-top: 1px solid rgba(255, 255, 255, 0.14); }
+.v14-p3-video > .beat-body { max-width: 68ch; margin-top: 8px; }
+.v14-p3-video .v12-buckets { margin-top: 32px; grid-template-columns: 1fr 1fr; justify-content: stretch;
+  --vw: calc((min(100vw, var(--container-max)) - 2 * var(--outer-margin) - 129px - 4 * 16px) / 6); }
+.v14-p3-video + .v6-weeks { margin-top: 64px; }
+.v14-measure { width: 100%; max-width: 1040px; margin: 0 auto 48px; text-align: left; }
+.v14-measure-row { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); column-gap: 24px; border-top: 2px solid #FFFFFF; }
+.v14-measure-row > div { padding: 14px 0; border-bottom: 1px solid rgba(255, 255, 255, 0.16); }
+.v14-measure-row b { display: block; font-family: var(--f-display); font-weight: 700; font-size: 17px; line-height: 1.25; color: #FFFFFF; }
+.v14-measure-row span { display: block; margin-top: 4px; font-family: var(--f-body); font-size: 13px; line-height: 1.45; color: var(--gsteel); }
+@media (max-width: 1100px) {
+  .v14-others { grid-template-columns: minmax(0, 1fr); row-gap: 16px; }
+  .ig-v4 .v14-marks { grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 28px; }
+  .v14-p3-video .v12-buckets { --vw: clamp(160px, 22vw, 220px); }
+  .v14-p3-video .v12-bucket { grid-template-columns: repeat(3, var(--vw)); }
+}
+@media (max-width: 900px) {
+  .v6-own-lists { grid-template-columns: minmax(0, 1fr); row-gap: 32px; }
+  .v14-p3-video .v12-buckets { --vw: min(220px, calc((100vw - 2 * var(--outer-margin) - 32px) / 3)); }
+}
+@media (max-width: 767px) {
+  .v14-others-row { grid-template-columns: minmax(0, 1fr); row-gap: 14px; }
+  .ig-v4 .v14-marks { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; margin-top: 8px; }
+  .ig-v4 .v14-mark img { width: min(100%, 140px); }
+  .v14-p3-video { margin-top: 48px; }
+  .v14-p3-video .v12-buckets { --vw: 42vw; }
+  .v14-p3-video .v12-bucket { grid-template-columns: none; grid-template-rows: auto auto; grid-auto-flow: column; grid-auto-columns: var(--vw);
+    overflow-x: auto; scroll-snap-type: x mandatory; scrollbar-width: none; overscroll-behavior-x: contain;
+    margin-right: calc(-1 * var(--outer-margin)); padding-right: var(--outer-margin); }
+  .v14-p3-video .v12-bucket::-webkit-scrollbar { display: none; }
+  .v14-p3-video .v12-bucket-head { grid-row: 1; grid-column: 1 / span 3; position: sticky; left: 0; width: calc(100vw - 2 * var(--outer-margin)); }
+  .v14-p3-video .v12-vid { grid-row: 2; scroll-snap-align: start; }
+  .v14-measure-row { grid-template-columns: minmax(0, 1fr); }
+}

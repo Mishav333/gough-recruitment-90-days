@@ -1,0 +1,85 @@
+
+.v15-p1 .v15-k { margin: 0 0 16px; font-family: var(--f-body); font-weight: 600; font-size: 13px; letter-spacing: 0.12em;
+  text-transform: uppercase; color: var(--gsteel); }
+.v15-p1 .v15-k b { color: #FFFFFF; font-weight: 700; }
+.v15-guide { margin-top: 40px; display: grid; grid-template-columns: minmax(0, 8fr) minmax(0, 4fr); column-gap: 48px; align-items: center; }
+.v15-mock { margin: 0; min-width: 0; }
+.v15-mock img { display: block; width: 100%; height: auto; border-radius: 16px; box-shadow: 0 24px 64px rgba(0, 0, 0, 0.32); background: #E4E7EA; }
+.v15-mock figcaption { margin-top: 16px; font-family: var(--f-body); font-size: 15px; line-height: 1.5; color: var(--gmist); max-width: 62ch; }
+.v15-inside { min-width: 0; }
+.v15-list { margin: 0; padding: 0; list-style: none; counter-reset: gi; border-top: 2px solid #FFFFFF; }
+.v15-list li { counter-increment: gi; position: relative; padding: 13px 0 13px 36px; border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+  font-family: var(--f-display); font-weight: 700; font-size: 18px; line-height: 1.3; color: #FFFFFF; }
+.v15-list li::before { content: counter(gi); position: absolute; left: 0; top: 13px; font-weight: 800; color: var(--gsteel); font-feature-settings: 'tnum'; }
+.v15-today { margin: 56px 0 0; padding: 24px 28px; border: 1px solid rgba(255, 255, 255, 0.18); border-radius: 12px; background: rgba(255, 255, 255, 0.04); }
+.v15-today-row { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px 40px; }
+.v15-today-av { margin: 0; padding: 0; list-style: none; display: flex; gap: 20px; }
+.v15-today-av li { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.v15-today-av img { width: 56px; height: 56px; border-radius: 50%; display: block; background: #FFFFFF; }
+.v15-today-av li { gap: 2px; }
+.v15-today-av img { margin-bottom: 4px; }
+.v15-today-av b { font-family: var(--f-display); font-weight: 700; font-size: 12px; color: #FFFFFF; white-space: nowrap; }
+.v15-today-av span { font-family: var(--f-body); font-size: 12px; color: var(--gmist); white-space: nowrap; }
+.v15-today-sw { display: grid; grid-template-columns: repeat(4, 84px); column-gap: 12px; }
+.v15-today .v6-sw i { height: 32px; border-color: rgba(255, 255, 255, 0.22); }
+.v15-today .v6-sw b { color: var(--gmist); font-size: 12px; white-space: nowrap; }
+.v15-today-type { display: flex; align-items: flex-end; gap: 24px; }
+.v15-today-type > div { display: flex; flex-direction: column; align-items: center; gap: 6px; }
+.v15-today-type span { font-family: var(--f-display); font-weight: 700; font-size: 12px; color: var(--gmist); }
+.v15-today-type p { margin: 0; color: #FFFFFF; }
+.v15-today-type .v6-type-d { font-size: 34px; }
+.v15-today-type .v6-type-b { font-size: 26px; margin: 0; }
+.v15-today-note { margin: 18px 0 0; font-family: var(--f-body); font-size: 15px; line-height: 1.5; color: var(--gmist); }
+.v15-hol { margin-top: 56px; }
+.v15-hol-pages { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 20px; }
+.v15-hol-pages figure { margin: 0; min-width: 0; }
+.v15-hol-pages img { display: block; width: 100%; height: auto; aspect-ratio: 800 / 566; border-radius: 6px; box-shadow: 0 12px 32px rgba(0, 0, 0, 0.3); background: #2B343B; }
+.v15-hol-pages figcaption { margin-top: 10px; font-family: var(--f-body); font-weight: 600; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gsteel); }
+.v15-hw-lede { margin: 20px 0 0; max-width: 58ch; font-family: var(--f-body); font-size: 19px; line-height: 1.55; color: var(--c2-body); }
+.v15-hw-gantt { --cols: 10; }
+.v15-hw-gantt .v12-g-track::before { display: none; }
+.v15-hw-weeks { display: grid; grid-template-columns: 250px minmax(0, 1fr); column-gap: 24px; }
+.v15-hw-weeks > div { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.v15-hw-weeks > div span { padding: 8px 0; font-family: var(--f-body); font-weight: 700; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase;
+  color: var(--gnavy); text-align: center; border-bottom: 2px solid var(--gnavy); }
+.v15-hw-weeks > div span + span { border-left: 2px solid var(--gmist); }
+.v15-hw-gantt .v12-g-rows > li { row-gap: 6px; }
+.v15-hw-d { grid-column: 2; margin: 0; font-family: var(--f-body); font-size: 15px; line-height: 1.5; color: #4E4E4E; max-width: 70ch; }
+.v15-hw-fee { margin-top: 40px; display: flex; }
+.v15-hw #team-fee-slot { border: 1px solid var(--gline); border-radius: 12px; background: #FFFFFF; padding: 18px 24px; }
+.v15-hw #team-fee-slot .v6-tbc-slot { margin: 0; font-family: var(--f-display); font-weight: 700; font-size: 18px; line-height: 1.3; color: var(--gnavy); }
+.v6-close-grid.v15-solo { grid-template-columns: minmax(0, 1fr); max-width: 860px; }
+@media (max-width: 1100px) {
+}
+@media (max-width: 1023px) {
+  .v15-guide { grid-template-columns: minmax(0, 1fr); row-gap: 32px; }
+  .v15-hw-weeks { grid-template-columns: 200px minmax(0, 1fr); }
+}
+@media (max-width: 767px) {
+  .v15-guide { margin-top: 28px; }
+  .v15-mock img { border-radius: 10px; }
+  .v15-list li { font-size: 16px; padding: 11px 0 11px 30px; }
+  .v15-list li::before { top: 11px; }
+  .v15-today { margin-top: 40px; padding: 20px; }
+  .v15-today-row { flex-direction: column; align-items: stretch; }
+  .v15-today-type { justify-content: flex-start; }
+  .v15-today-av { justify-content: space-between; gap: 8px; }
+  .v15-today-av img { width: 52px; height: 52px; }
+  .v15-today-sw { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+  .v15-hol { margin-top: 40px; }
+  .v15-hol-pages { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 20px 16px; }
+  .v15-hw-lede { font-size: 17px; }
+  .v15-hw-weeks { grid-template-columns: minmax(0, 1fr); }
+  .v15-hw-weeks > span { display: none; }
+  .v15-hw-d { grid-column: 1; font-size: 14px; }
+}
+.v7-shot .v151-pin2 { display: block; }
+@media (max-width: 767px) { .v7-shot .v151-pin2 { width: 12px; height: 12px; font-size: 8px; line-height: 12px; } }
+.v151-cue { display: none; }
+@media (max-width: 767px) {
+  .v14-p3-video .v151-cue.is-live { display: flex; grid-row: 3; grid-column: 1 / span 3; position: sticky; left: 0;
+    width: calc(100vw - 2 * var(--outer-margin)); justify-content: center; gap: 8px; margin-top: -8px; }
+  .v151-cue i { display: block; width: 6px; height: 6px; border-radius: 50%; background: rgba(255, 255, 255, 0.28);
+    transition: background-color 0.2s ease; }
+  .v151-cue i.on { background: #FFFFFF; }
+}

@@ -1,0 +1,39 @@
+
+.fx-web-tiles { display: none; }
+@media (max-width: 767px) {
+  .v7-web .v7-cap > .browser-frame { display: none; }
+  .fx-web-tiles { display: grid; grid-template-columns: minmax(0, 1fr); row-gap: 12px; }
+  .fx-web-tile { position: relative; margin: 0; line-height: 0; border-radius: 10px; overflow: hidden; background: #D6DDE3; box-shadow: 0 12px 32px rgba(0, 52, 89, 0.14); }
+  .fx-web-tile > img { display: block; width: 100%; height: auto; }
+  .fx-web-mark { position: absolute; box-sizing: border-box; border: 2px solid #D0021B; border-radius: 4px; background: rgba(208, 2, 27, 0.10); }
+  .fx-web-pin {
+    position: absolute; display: flex; align-items: center; justify-content: center; width: 22px; height: 22px; border-radius: 50%;
+    background: #D0021B; color: #FFFFFF; font-family: var(--f-display); font-weight: 800; font-size: 12px; line-height: 1;
+    box-shadow: 0 0 0 2px #FFFFFF;
+  }
+  .fx-web-pin-3 { width: 18px; height: 18px; font-size: 10px; transform: translate(-50%, -50%); }
+}
+.v7-marks .v6-avatar b { font-size: 13px; }
+.v7-marks .v6-avatar > span:last-child { font-size: 11px; line-height: 1.35; }
+.v7-mrow .v6-sheet-note { margin-top: 0 !important; }
+@media (min-width: 1240px) {
+  .v6-sheet-marks.v7-marks { grid-template-columns: minmax(0, 52fr) minmax(0, 48fr); }
+  .v7-today { grid-template-columns: repeat(4, minmax(0, 1fr)); column-gap: 8px; }
+  .v7-marks .v6-avatar > span:last-child { font-size: 10px; white-space: nowrap; }
+}
+@media (min-width: 768px) and (max-width: 1239px) {
+  .v7-today { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+@media (min-width: 1101px) and (max-width: 1239px) {
+  .v6-sheet-marks.v7-marks { grid-template-columns: minmax(0, 1fr); row-gap: 24px; }
+  .v7-mrow-today { padding: 0 0 24px; border-right: 0; border-bottom: 1px solid #E5E5E5; }
+}
+@media (max-width: 767px) {
+  .v7-marks .v6-avatar > span:last-child { display: none !important; }
+}
+.fx-perth { margin: 16px 0 0; display: flex; align-items: center; gap: 14px; }
+.fx-perth img { flex: none; width: 128px; height: auto; border-radius: 8px; display: block; }
+.fx-perth figcaption { display: flex; flex-direction: column; gap: 2px; font-family: var(--f-body); font-size: 12px; line-height: 1.4; color: #4E4E4E; }
+.fx-perth figcaption b { font-family: var(--f-display); font-weight: 700; font-size: 13px; color: var(--gnavy); }
+#team-fee-slot .v6-tbc-slot { padding-top: 0; border-top: 0; font-size: 16px; color: #FFFFFF; }
+.v6-mock-h .nw { white-space: nowrap; }

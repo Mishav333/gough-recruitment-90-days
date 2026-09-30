@@ -1,0 +1,43 @@
+
+@media (min-width: 1101px) {
+  [data-beat="Why we looked"] .v4-split { align-items: stretch; }
+  [data-beat="Why we looked"] .v4-split-copy { display: flex; flex-direction: column; }
+  [data-beat="Why we looked"] .v4-split-copy > .v4-eyebrow { margin-top: 0; }
+  [data-beat="Why we looked"] .v9-cred { margin-top: auto; }
+  [data-beat="Why we looked"] .section-h2 {
+    margin-top: 32px; font-size: clamp(54px, 4.5vw, 64px); line-height: 1.06; letter-spacing: -0.02em;
+    max-width: 14ch; text-wrap: balance;
+  }
+  [data-beat="Why we looked"] .v4-lede { margin-top: 48px; font-size: 27px; line-height: 1.5; max-width: 28ch; text-wrap: pretty; }
+}
+@media (min-width: 1101px) and (max-width: 1279px) {
+  [data-beat="Why we looked"] .v4-split { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); column-gap: 64px; }
+}
+.v10-li-plain {
+  margin: 20px 0 0; font-family: var(--f-body); font-size: 16px; line-height: 1.55; color: #2E2E30;
+}
+.ig-v4 .v4i-plan.v10-plan { margin-top: 80px; padding: 48px 56px; }
+.ig-v4 .v10-ends { list-style: none; margin: 32px 0 0; padding: 0; border-top: 2px solid var(--v4-navy); }
+.ig-v4 .v10-ends li {
+  display: grid; grid-template-columns: 300px minmax(0, 1fr); column-gap: 32px; align-items: center;
+  padding: 16px 20px; border-bottom: 1px solid #D5DCE1; font-family: var(--f-body);
+}
+.ig-v4 .v10-ends-acct b { display: block; font-weight: 700; font-size: 15px; line-height: 1.45; color: var(--v4-ink); white-space: nowrap; }
+.ig-v4 .v10-ends p { margin: 0; font-size: 16px; line-height: 1.5; color: var(--v4-ink); }
+.ig-v4 .v10-ends li.is-lead { background: var(--v4-navy); border-left: 3px solid var(--v4-gold); border-bottom: 0; }
+.ig-v4 .v10-ends li.is-lead b, .ig-v4 .v10-ends li.is-lead p { color: #FFFFFF; }
+@media (max-width: 1100px) {
+  .ig-v4 .v4i-plan.v10-plan { padding: 40px 32px; }
+  .ig-v4 .v10-ends li { grid-template-columns: 220px minmax(0, 1fr); column-gap: 24px; }
+}
+@media (max-width: 760px) {
+  .ig-v4 .v4i-plan.v10-plan { margin-top: 56px; padding: 32px 18px; }
+  .ig-v4 .v10-ends { margin-top: 24px; }
+  .ig-v4 .v10-ends li { grid-template-columns: minmax(0, 1fr); row-gap: 6px; padding: 14px 14px; }
+  .ig-v4 .v10-ends-acct b { font-size: 14px; }
+  .ig-v4 .v10-ends p { font-size: 15px; }
+}
+.illustrative-card { padding-bottom: 28px; }
+.illustrative-card .ill-frame { height: 58%; }
+.illustrative-card .ill-series { margin-top: auto; padding-top: 16px; }
+.illustrative-card .ill-hook { margin: 10px 0 4px; }
